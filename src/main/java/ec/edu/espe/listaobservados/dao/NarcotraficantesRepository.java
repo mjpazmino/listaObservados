@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface NarcotraficantesRepository extends MongoRepository<Narcotraficantes, String> {
 
-    Optional<Narcotraficantes> findByNombreCompleto(String nombreCompleto);
+    Optional<Narcotraficantes> findByNombreCompletoAAndAndSancionado(String nombreCompleto, String sancionado);
 }
